@@ -1,0 +1,33 @@
+ 
+    /*@import "/templates/net/assets/plugins/bootstrap/css/bootstrap.css?v=@@version@@";*/
+    /*@import "/templates/net/pages/css/themes/net-basic.css?v=@@version@@";*/
+    /*@import "/templates/net/assets/plugins/font-awesome/css/fontawesome.css?v=@@version@@";*/
+    /*@import "/templates/net/assets/plugins/font-awesome/css/light.min.css";*/
+    
+    :host {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    #filter {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .5rem 0;
+    }
+    
+    .andor {
+        font-size: 12px;
+        min-height: 18px;
+    }
+    
+    .remove:hover {
+        background: white !important;
+    }
+    
+    .hint-text {
+        color: rgba(146, 154, 172, 1) !important;
+    }
+
+

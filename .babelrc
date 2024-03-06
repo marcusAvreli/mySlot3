@@ -1,0 +1,8 @@
+{
+   "sourceMaps": true,
+    "inputSourceMap": true,
+ plugins: ['transform-custom-element-classes', 'transform-es2015-classes','babel-plugin-transform-es2015-block-scoping']
+ ,options: {
+          presets: ["babel-preset-env" ,"es2015", "es2016"],
+        }
+}

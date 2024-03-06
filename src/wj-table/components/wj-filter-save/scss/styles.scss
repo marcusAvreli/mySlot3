@@ -1,0 +1,98 @@
+:host {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  //width: min-content;
+  height: 28px;
+  margin-right: 1rem;
+  display: flex;
+}
+
+.container-edit{
+  overflow: hidden;
+}
+
+.edit{
+  //opacity: 0;
+}
+
+.heading {
+  z-index: 1;
+}
+.heading h5 {
+  margin: 0;
+}
+.heading:hover .edit{
+  margin-left: .5rem;
+
+  opacity: 1;
+}
+
+.heading, .input{
+  display: inline-flex;
+  align-items: center;
+  //position: absolute;
+  left: 0;
+}
+
+.buttons {
+  display: flex;
+  //opacity: 0;
+}
+
+.input {
+  //opacity: 0;
+  transform: translateX(0);
+  //margin-top: -4px;
+  display: none;
+}
+
+input {
+  border-radius: 3px !important;
+  margin: 0 1rem 0 0;
+}
+
+.input.open {
+  z-index: 9;
+}
+
+.animation {
+  animation: rollout .2s linear forwards;
+}
+
+.fade-out {
+  //animation: fadeOut .1s linear forwards;
+  display: none;
+}
+
+.fade-in {
+  //animation: fadeOut .1s linear forwards reverse;
+  display: flex;
+}
+
+.form-control {
+  height: 28px;
+  min-height: 26px;
+}
+
+@keyframes rollout {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    //opacity: 1;
+    display: block;
+  }
+  to {
+    //opacity: 0;
+    display: none;
+  }
+}

@@ -1,0 +1,109 @@
+// Import important
+@import "../themes/net-basic/important";
+
+/*------------------------------------------------------------------
+[32. Organisation structure]
+*/
+
+node.boss rect {
+  fill: #cc00ff;
+}
+[node-id] rect {
+  fill: #f4f4f4;
+  stroke: $color-border-a;
+
+}
+
+[node-id] text {
+  fill: #000000;
+
+}
+
+[level='null'] rect {
+  fill: #fff;
+  stroke: $color-border-a;
+}
+
+[data-id='search'] {
+  border-radius: var(--main-radius) !important;
+  border: 1px solid var(--main-color-border-primary);
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+[data-id='search'] > div svg {
+  width: 26px;
+  height: 26px;
+  margin: 7px !important;
+}
+
+[data-search-item-id]{
+  padding: 5px !important;
+}
+
+[data-search-item-id] img{
+  border-radius: 50% !important;
+
+  padding: 0 !important;
+}
+
+.field_0 {
+  font-family: var(--main-font-family-secondary);
+  text-transform: uppercase;
+  fill: #ffbc00;
+}
+
+.field_1 {
+  fill: var(--main-color-primary);
+  font-family: var(--main-font-family);
+}
+
+[link-id] path {
+  stroke: $color-border-a;
+}
+
+[link-id='[3][4]'] path {
+  stroke: $color-border-a;
+}
+
+[control-expcoll-id] circle {
+  fill: $color-contrast-lowest;//var(--main-color-primary-hover);
+  stroke: $color-border-a;//var(--main-color-border-primary);
+}
+
+[control-expcoll-id] line{
+  stroke: $color-border-a;
+}
+
+[control-expcoll-id='3'] circle {
+  fill: #016e25;
+}
+
+[control-node-menu-id] circle {
+  fill: #bfbfbf;
+}
+
+#tree>svg {
+  background-color: #2E2E2E;
+}
+
+.bg-search-table {
+  background-color: #2E2E2E !important;
+}
+
+.bg-search-table input {
+  background-color: #2E2E2E !important;
+}
+
+.node.boss rect {
+  fill: #ffffff;
+}
+
+.node.boss text {
+  fill: #000000;
+}
+
+#people hr { margin: .3rem 0;  }
+[data-item] { cursor: pointer; }
+[data-item] svg { top: 5px; position: relative; cursor: pointer; }
+[control-export-menu] { width: 30px !important; }

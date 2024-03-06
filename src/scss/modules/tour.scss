@@ -1,0 +1,161 @@
+// Import important
+@import "../themes/net-basic/important";
+
+
+.shepherd-element {
+    max-width: 500px;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
+}
+
+.shepherd-element.changelog {
+    max-width: 800px;
+}
+
+.shepherd-element.changelog .shepherd-text .changes-container{
+    height: 600px;
+    overflow: scroll;
+}
+
+.shepherd-element.changelog ul {
+    padding-inline-start: 25px;
+}
+
+.shepherd-theme-custom .shepherd-text {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.shepherd-element img{
+    max-width: 500px;
+    margin-bottom: 8px;
+}
+
+.shepherd-theme-custom .shepherd-title{
+    font-size: 14px;
+}
+
+.shepherd-has-title .shepherd-content .shepherd-header{
+    padding: 12px 24px 4px!important;
+    background-color: white;
+}
+
+.shepherd-has-title .shepherd-content .shepherd-header h3{
+    line-height: normal;
+    justify-content: space-between;
+}
+
+.shepherd-theme-custom .tour-close {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.shepherd-theme-custom .tour-close:hover,
+.shepherd-theme-custom .tour-close:focus  {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+
+.shepherd-theme-custom .shepherd-footer {
+    font-size: 14px;
+    padding: 0 24px 24px;
+}
+
+.shepherd-theme-custom .description-text {
+    padding: 0 24px;
+    padding-top: 0.25rem;
+}
+
+.shepherd-theme-custom .hint-text {
+    padding: 0 24px;
+}
+
+.shepherd-theme-custom .shepherd-header .hint-text {
+    padding: 0;
+}
+
+.shepherd-theme-custom .shepherd-button.documentation {
+    background-color: transparent;
+    padding: 0;
+}
+
+.shepherd-theme-custom .documentation {
+    a {
+        color: $color-contrast-high;
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color-contrast-high;
+        }
+      }
+    .btn-icon-link {
+        left: -4px;
+    }
+}
+
+.shepherd-element[data-popper-placement^=bottom] {
+    margin-top: 20px!important;
+}
+
+.shepherd-element[data-popper-placement^=right] {
+    margin-left: 20px!important;
+}
+
+.shepherd-element[data-popper-placement^=left] {
+    margin-right: 20px!important;
+}
+
+.shepherd-element[data-popper-placement^=top] {
+    margin-bottom: 20px!important;
+}
+
+.shepherd-footer {
+    padding: 0; 
+}
+
+.shepherd-element[data-popper-placement^=bottom] > .shepherd-arrow::before {
+    background-color: white!important;
+    border-top: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    top: 2px;
+}
+
+.shepherd-element[data-popper-placement^=right] > .shepherd-arrow::before {
+    background-color: white!important;
+    border-bottom: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    left: 2px;
+}
+
+.shepherd-element[data-popper-placement^=top] > .shepherd-arrow::before {
+    background-color: white!important;
+    border-bottom: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    bottom: 2px;
+}
+
+.shepherd-element[data-popper-placement^=left] > .shepherd-arrow::before {
+    background-color: white!important;
+    border-top: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    right: 3px;
+}
+
+.articleBreadcrumbs.shepherd-element[data-popper-placement^=bottom-start] > .shepherd-arrow::before {
+    background-color: white!important;
+    border-top: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    top: 2px;
+    left: -450px;
+}
+.shepherd-arrow, .shepherd-arrow:before {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    z-index: -1;
+}
+
+.detailSettingsButton.shepherd-element[data-popper-reference-hidden] {
+    opacity: initial;
+    pointer-events: initial;
+    visibility: initial;
+}

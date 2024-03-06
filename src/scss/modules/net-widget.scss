@@ -1,0 +1,91 @@
+// Import important
+@import "../themes/net-basic/important";
+
+/*------------------------------------------------------------------
+[35. Net-Widget]
+*/
+
+.net-widget-item:not(:first-child):not(:last-child) {
+  margin:0 2.2rem
+}
+.net-widget-item:last-child {
+  padding-left:1rem
+}
+.net-widget-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.net-widget-item {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  -webkit-box-flex:1;
+  -ms-flex-positive:1;
+  /*flex-grow: 1;*/
+  padding: 0 1rem 1rem;
+}
+
+.net-widget-item .net-widget-icon {
+  display: flex;
+  align-items: center !important;
+}
+
+.net-widget-item .net-widget-icon i {
+  font-size: 2rem;
+  color: #a2a5b9;
+
+}
+//.net-widget-item .net-widget-details {
+//  padding-left:1rem
+//}
+
+.net-widget-item .net-widget-details p {
+  padding-left:1rem
+}
+
+.net-widget-item .net-widget-details p {
+  display:block;
+  font-size: .75rem;
+  padding: 0;
+}
+.net-widget-item .net-widget-details .net-widget-value {
+  display:block;
+  color: #2c2c2c;
+  font-weight:600;
+  font-size: .9rem
+}
+.net-widget-item .net-widget-details .net-widget-value span {
+  color:#595d6e;
+  font-weight:400
+}
+.net-widget-item .net-widget-details a.net-widget-value {
+  font-size:.95rem
+}
+.net-widget-item .net-widget-details a.net-widget-value:hover {
+  color:#5d78ff
+}
+.net-widget-item .net-widget-details .kt-section__content {
+  padding-left:.7rem
+}
+.kt-widget.kt-widget--user-profile-3 .net-widget-form {
+  margin-top:1.5rem
+}
+
+@media only screen and (max-width: 768px) {
+  .net-widget-attendance{
+    border-top: 1px solid $color-border-a;
+    padding-top: 1rem;
+  }
+}

@@ -1,0 +1,377 @@
+// Import important
+@import "../themes/net-basic/important";
+
+/*------------------------------------------------------------------
+[31. Skeleton]
+*/
+
+/* Animation */
+@keyframes net-loading {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Animation partial */
+%net-animation {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    animation: net-loading $skeleton-loading-animation-time infinite;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+    background: linear-gradient(90deg, transparent, hsla(0, 0%, 100%, 0.3), transparent);
+  }
+}
+
+%net-animation-dark {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    animation: net-loading $skeleton-loading-animation-time infinite;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+    background: linear-gradient(90deg, transparent, hsla(0,100%,0%,0.03), transparent);
+  }
+}
+
+.net-content{
+  //display: block;
+  opacity: 1;
+  transition: opacity 1s;
+  z-index: 999;
+}
+
+.net-loading{
+  .net-content{
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .net-ssc{
+    //display: block !important;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+}
+
+/** Main class */
+.net-ssc {
+  cursor: progress;
+  user-select: none;
+  //display: none;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 0;
+}
+
+/** Helpers classes */
+.net-ssc {
+  .mb {
+    margin-bottom: $skeleton-margin-standart;
+  }
+
+  .mt {
+    margin-top: $skeleton-margin-standart;
+  }
+
+  .mr {
+    margin-right: $skeleton-margin-standart;
+  }
+
+  .ml {
+    margin-left: $skeleton-margin-standart;
+  }
+
+  .mbs {
+    margin-bottom: $skeleton-margin-small;
+  }
+
+  .mts {
+    margin-top: $skeleton-margin-small;
+  }
+
+  .mrs {
+    margin-right: $skeleton-margin-small;
+  }
+
+  .mls {
+    margin-left: $skeleton-margin-small;
+  }
+
+  .w-10 {
+    width: 10%;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-30 {
+    width: 30%;
+  }
+
+  .w-40 {
+    width: 40%;
+  }
+
+  .w-50 {
+    width: 50%;
+  }
+
+  .w-60 {
+    width: 60%;
+  }
+
+  .w-70 {
+    width: 70%;
+  }
+
+  .w-80 {
+    width: 80%;
+  }
+
+  .w-90 {
+    width: 90%;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .inline-flex {
+    display: inline-flex;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .align-start {
+    align-items: flex-start;
+  }
+
+  .align-end {
+    align-items: flex-end;
+  }
+
+  .align-stretch {
+    align-items: stretch;
+  }
+
+  .justify-start {
+    justify-content: start;
+  }
+
+  .justify-end {
+    justify-content: end;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-around {
+    justify-content: space-around;
+  }
+}
+
+/** Wrapper class */
+.net-wrapper {
+  padding: $skeleton-margin-standart;
+}
+
+/* Figures, Objects */
+.net-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: $skeleton-card-border-radius;
+  box-shadow: $skeleton-card-box-shadow;
+  background-color: $skeleton-card-background-color;
+}
+
+/* LIGHT - background */
+
+.net-circle {
+  display: block;
+  background-color: $skeleton-element-color;
+  border-radius: 50%;
+  width: $skeleton-circle-size;
+  height: $skeleton-circle-size;
+
+  @extend %net-animation;
+}
+
+.net-hr {
+  display: block;
+  width: 100%;
+  background-color: $skeleton-element-color;
+  height: $skeleton-hr-height;
+}
+
+.net-line {
+  display: block;
+  background-color: $skeleton-element-color;
+  border-radius: $skeleton-line-border-radius;
+  margin-bottom: $skeleton-line-margin-bottom;
+  width: 100%;
+  height: $skeleton-line-height;
+
+  &:last-child {
+    margin-bottom: unset;
+  }
+
+  @extend %net-animation;
+}
+
+.net-head-line {
+  display: block;
+  background-color: $skeleton-element-color;
+  border-radius: $skeleton-line-border-radius;
+  width: 100%;
+  height: $skeleton-headline-height;
+
+  @extend %net-animation;
+}
+
+.net-square {
+  display: block;
+  background-color: $skeleton-element-color;
+  width: 100%;
+  height: $skeleton-square-height;
+
+  @extend %net-animation;
+}
+
+/* LIGHT 2 - background */
+
+.net-dark .net-circle {
+  display: block;
+  background-color: $color-contrast-low;
+  border-radius: 50%;
+  width: $skeleton-circle-size;
+  height: $skeleton-circle-size;
+
+  @extend %net-animation;
+}
+
+.net-dark .net-hr {
+  display: block;
+  width: 100%;
+  background-color: $color-contrast-low;
+  height: $skeleton-hr-height;
+}
+
+.net-dark .net-line {
+  display: block;
+  background-color: $color-contrast-low;
+  border-radius: $skeleton-line-border-radius;
+  margin-bottom: $skeleton-line-margin-bottom;
+  width: 100%;
+  height: $skeleton-line-height;
+
+  &:last-child {
+    margin-bottom: unset;
+  }
+
+  @extend %net-animation;
+}
+
+.net-dark .net-head-line {
+  display: block;
+  background-color: $color-contrast-low;
+  border-radius: $skeleton-line-border-radius;
+  width: 100%;
+  height: $skeleton-headline-height;
+
+  @extend %net-animation;
+}
+
+.net-dark .net-square {
+  display: block;
+  background-color: $color-contrast-low;
+  width: 100%;
+  height: $skeleton-square-height;
+  border-radius: 4px;
+
+  @extend %net-animation;
+}
+
+/* DARK - background */
+//
+//.net-circle {
+//  display: block;
+//  background-color: $color-white;
+//  border-radius: 50%;
+//  width: $skeleton-circle-size;
+//  height: $skeleton-circle-size;
+//
+//  @extend %net-animation-dark;
+//}
+//
+//.net-hr {
+//  display: block;
+//  width: 100%;
+//  background-color: $color-white;
+//  height: $skeleton-hr-height;
+//}
+//
+//.net-line {
+//  display: block;
+//  background-color: $color-white;
+//  border-radius: $skeleton-line-border-radius;
+//  margin-bottom: $skeleton-line-margin-bottom;
+//  width: 100%;
+//  height: $skeleton-line-height;
+//
+//  &:last-child {
+//    margin-bottom: unset;
+//  }
+//
+//  @extend %net-animation-dark;
+//}
+//
+//.net-head-line {
+//  display: block;
+//  background-color: $color-white;
+//  border-radius: $skeleton-line-border-radius;
+//  width: 100%;
+//  height: $skeleton-headline-height;
+//
+//  @extend %net-animation-dark;
+//}
+//
+//.net-square {
+//  display: block;
+//  background-color: $color-white;
+//  width: 100%;
+//  height: $skeleton-square-height;
+//
+//  @extend %net-animation-dark;
+//}
+
+

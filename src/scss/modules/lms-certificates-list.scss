@@ -1,0 +1,20 @@
+#certificates-list {
+
+  .card {
+
+    .card-header {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+      img {
+        aspect-ratio: 1 / 1.412;
+        height : 120px;
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}

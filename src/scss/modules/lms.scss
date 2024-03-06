@@ -1,0 +1,60 @@
+.lms-bg-header-overlay {
+    background: rgb(255,255,255); 
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 9%, rgba(255, 255, 255, 0.752959) 20%, white 30%);
+}
+
+lms-course-head #card-advance {
+    background-size: auto 100%;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1199px) {
+    lms-course-head #card-advance {
+        background-size: auto 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .lms-bg-header-overlay {
+        background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.750438) 25%, white 40%);
+    } 
+}
+
+@media (max-width: 767px) {
+    lms-course-head #card-advance {
+        background-size: 120% auto;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .lms-bg-header-overlay {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.708757) 35%, white 50%);
+        padding-top: 250px!important;
+    }
+
+    .lms-btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@media (max-width: 575px) {
+    lms-course-head #card-advance {
+        background-size: auto 50%;
+    }
+    .lms-bg-header-overlay {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.501278) 21%, white 30%);
+    }
+    .phone-full-width-custom {
+        width: 100%!important;
+    }
+}
+
+//**********
+// ** ILT
+//**********
+
+#ilt-content .detail-toggle:hover {
+    cursor: pointer;
+}

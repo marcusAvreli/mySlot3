@@ -1,0 +1,65 @@
+// Import important
+@import "../themes/net-basic/important";
+@import "../themes/net-basic/var";
+
+/*------------------------------------------------------------------
+[33. Net variables]
+*/
+:root, :host {
+  --interface-font-family: #{$interface-font-family};
+
+  --color-info: #{$color-info};
+  --color-menu: #{$color-menu};
+
+  //primary-shade
+  --color-primary: #{$color-primary};
+  --color-primary-lighter: #{$color-primary-lighter};
+  --color-primary-light: #{$color-primary-light};
+  --color-primary-dark: #{$color-primary-dark};
+  --color-primary-darker: #{$color-primary-darker};
+
+  //success-shade
+  --color-success: #{$color-success};
+  --color-success-lighter: #{$color-success-lighter};
+  --color-success-light: #{$color-success-light};
+  --color-success-dark: #{$color-success-dark};
+  --color-success-darker: #{$color-success-darker};
+
+  //warning-shade
+  --color-warning: #{$color-warning};
+  --color-warning-lighter: #{$color-warning-lighter};
+  --color-warning-light: #{$color-warning-light};
+  --color-warning-dark: #{$color-warning-dark};
+  --color-warning-darker: #{$color-warning-darker};
+
+  //danger-shade
+  --color-danger: #{$color-danger};
+  --color-danger-lighter: #{$color-danger-lighter};
+  --color-danger-light: #{$color-danger-light};
+  --color-danger-dark: #{$color-danger-dark};
+  --color-danger-darker: #{$color-danger-darker};
+
+  //complete-shade
+  --color-complete: #{$color-complete};
+  --color-complete-lighter: #{$color-complete-lighter};
+  --color-complete-light: #{$color-complete-light};
+  --color-complete-dark: #{$color-complete-dark};
+  --color-complete-darker: #{$color-complete-darker};
+
+  --color-contrast-lowest: #{$color-contrast-lowest};
+  --color-contrast-lower: #{$color-contrast-lower};
+  --color-contrast-low: #{$color-contrast-low};
+  --color-contrast-medium: #{$color-contrast-medium};
+  --color-contrast-high: #{$color-contrast-high};
+  --color-contrast-higher: #{$color-contrast-higher};
+
+  --color-border-a: #{$color-border-a};
+  --color-contrast-warning-lighter: #{text-contrast($color-warning-lighter)};
+  --color-contrast-complete-lighter: #{text-contrast($color-complete-lighter)};
+  --color-contrast-success-lighter: #{text-contrast($color-success-lighter)};
+  --color-contrast-danger-lighter: #{text-contrast($color-danger-lighter)};
+  --color-contrast-primary-lighter: #{text-contrast($color-primary-lighter)};
+
+  --color-border: #{fade($color-contrast-low, 70%)};
+  --color-hinted-a: #{$color-hinted-a};
+}

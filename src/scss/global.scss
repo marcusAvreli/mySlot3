@@ -1,0 +1,20 @@
+// Import important
+@import "./themes/net-basic/important";
+
+
+:root {
+  --wj-color: #{$color};
+  --wj-font-family: #{$font-family};
+  --wj-font-family-secondary: #{$secondary-font-family};
+  --wj-font-size: #{$font-size};
+  --wj-line-height: #{$line-height};
+  --wj-color-contrast: #{$color};
+
+  --wj-border-radius: #{$border-radius};
+  --wj-border-color: #{$border-color} !important;
+  --wj-border-size: #{$border-size};
+  --wj-border-style: #{$border-style};
+}
+
+@import "./modules/typography.scss";
+@import "./responsive.scss";

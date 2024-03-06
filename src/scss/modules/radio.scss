@@ -1,0 +1,143 @@
+// Import important
+@import "../themes/net-basic/important";
+
+// Radio
+.form-check {
+	input[type="radio"] +label {
+    &:before {
+      bottom: 2.5px;
+      border-radius: 99px;
+      @include transition(
+        border 0.3s 0s cubic-bezier(0.455, 0.03, 0.215, 1.33)
+      );
+    }
+  }
+  input[type="radio"]:checked {
+    & + label {
+      &:before {
+		border-color: $color-contrast-medium;
+        border-width: 5px;
+      }
+    }
+  }
+  input[type="radio"]:hover{
+	&:active:not(:checked){
+	  & + label {
+		  &:before{
+			background-color:rgba(0, 0, 0, 0.08);
+		}
+		}
+	}
+  }	
+  input[type="radio"]:focus {
+    & + label {
+		color: $color-contrast-higher;
+	  	&:before{
+			outline: none !important;
+			box-shadow: 0 0 0 $focus-width $color-focus;
+		}
+	}
+  }
+
+  input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+  }
+
+  input[type="radio"][disabled] {
+    & + label {
+		cursor: not-allowed!important;
+		color: $color-contrast-high;
+		opacity: 0.58;
+      &:before {
+		cursor: not-allowed!important;
+		background: mix($color-contrast-higher, $color-contrast-lower, 04%);
+	  }
+    }
+  }
+}
+  // Colors
+  input[type="radio"]:checked + label:before {
+	.success & {
+	  border-color: $color-success;
+	}
+	.primary & {
+	  border-color: $color-primary;
+	}
+	.info & {
+	  border-color: $color-info;
+	}
+	.warning & {
+	  border-color: $color-warning;
+	}
+	.danger & {
+	  border-color: $color-danger;
+	}
+	.complete & {
+	  border-color: $color-complete;
+	}
+  }
+
+/* hide focus style if not from keyboard navigation */
+.js-focus-visible .form-check input[type="radio"]:focus:not(.focus-visible) + label:before {
+	box-shadow: none;
+}
+
+// ------------------------
+// radio looks like checkbox
+// ------------------------
+.form-check.radio-like-checkbox input[type=radio]+label:before {
+	border-radius: 3px;
+}
+.form-check.radio-like-checkbox input[type=radio]+label::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	border-right: 0 solid transparent;
+	border-bottom: 0 solid transparent;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+
+// .success.radio-like-checkbox input[type=radio]:checked+label:before, .success input[type=radio]:indeterminate+label:before {
+// 	border-color: #19ad79;
+// 	background-color: #19ad79;
+// }
+
+// Colors
+input[type="radio"]:checked + label:before {
+	.success.radio-like-checkbox & {
+	  background-color: $color-success;
+	}
+	.primary.radio-like-checkbox & {
+	  background-color: $color-primary;
+	}
+	.info.radio-like-checkbox & {
+	  background-color: $color-info;
+	}
+	.warning.radio-like-checkbox & {
+	  background-color: $color-warning;
+	}
+	.danger.radio-like-checkbox & {
+	  background-color: $color-danger;
+	}
+	.complete.radio-like-checkbox & {
+	  background-color: $color-complete;
+	}
+  }
+
+
+.form-check.radio-like-checkbox input[type=radio]:checked+label::after {
+	content: "";
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAQAgMAAADsa5zLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURUdwTP///////////waf0AoAAAAEdFJOUwBG9tQE3MceAAAAVUlEQVQoz2NgGLKA0QGIDwDxBSCeAMEYgAWI2YCK2CagYgwgDcRSDhgYbAkKzsSKGdgakCyY6ADES7BiiCkgJ4PYyybgxAhQAsRZDrgxCpDEg4cAAAAp2ibhZRGLHgAAAABJRU5ErkJggg==) left center;
+	animation-name: checkbox-check;
+	animation-duration: 320ms;
+	animation-timing-function: steps(9);
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}

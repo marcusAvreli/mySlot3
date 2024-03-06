@@ -1,0 +1,127 @@
+@import "../../scss/themes/net-basic/important.scss";
+
+/*
+[ Dropdown ]
+*/
+
+:host {
+  //--wj-dropdown-placement-top: 0;
+  //--wj-dropdown-placement-left: 0;
+}
+//
+//:host(.wj-placement.wj-top-start) {
+//  --wj-dropdown-placement-top: auto;
+//  --wj-dropdown-placement-bottom: 100%;
+//  --wj-dropdown-placement-start: 0;
+//  --wj-dropdown-placement-end: auto;
+//}
+//
+//:host(.wj-placement.wj-top-end) {
+//  --wj-dropdown-placement-top: auto;
+//  --wj-dropdown-placement-bottom: 100%;
+//  --wj-dropdown-placement-start: auto;
+//  --wj-dropdown-placement-end: 0;
+//}
+//
+//:host(.wj-placement.wj-start) {
+//  --wj-dropdown-placement-top: auto;
+//  --wj-dropdown-placement-bottom: auto;
+//  --wj-dropdown-placement-start: 0;
+//  --wj-dropdown-placement-end: auto;
+//}
+//
+//:host(.wj-placement.wj-end) {
+//  --wj-dropdown-placement-top: auto;
+//  --wj-dropdown-placement-bottom: auto;
+//  --wj-dropdown-placement-start: auto;
+//  --wj-dropdown-placement-end: 0;
+//}
+
+//::slotted(wj-button){
+//  margin: 0;
+//}
+//:host wj-button {
+//  margin: 0;
+//}
+//
+//.dropdown {
+//  position: absolute;
+//  background-color: white;
+//  min-width: 240px;
+//  width: fit-content;
+//  min-inline-size: max-content;
+//  //padding: 1rem;
+//  box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
+//  height: fit-content;
+//  border-radius: 4px;
+//  border: 1px solid var(--color-border-a);
+//  list-style: none;
+//  text-shadow: none;
+//  //max-width: calc(100vw - 24px);
+//  display: block;
+//  left: var(--wj-dropdown-placement-left);
+//  top: var(--wj-dropdown-placement-top);
+//}
+//
+//
+//.native-dropdown {
+//  display: inline-block;
+//  //position: relative;
+//}
+//
+///* Hiding The disclosure widget */
+//.native-dropdown summary {
+//  list-style: none;
+//  cursor: pointer;
+//  display: flex;
+//}
+//
+//.native-dropdown summary::-webkit-details-marker {
+//  display: none;
+//}
+//
+///* Detaching details content */
+//.native-dropdown .dropdown {
+//  //position: absolute;
+//  //min-inline-size: max-content;
+//  //background-color: white;
+//  //border: 1px solid #9b7aba;
+//  ////right: var(--wj-dropdown-placement-end);
+//  //left: var(--wj-dropdown-placement-left);
+//  //top: var(--wj-dropdown-placement-top);
+//  ////bottom: var(--wj-dropdown-placement-bottom);
+//  //box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+//}
+//
+//.native-dropdown ul {
+//  list-style: none;
+//  margin: 0;
+//  padding: 0.75em 0;
+//  background-color: white;
+//  color: #8259a8;
+//}
+//
+//.native-dropdown a {
+//  display: block;
+//  color: #8259a8;
+//  text-decoration: none;
+//  padding: 0.5em 1.5em;
+//  text-align: right;
+//}
+//
+//.native-dropdown a:hover, .dropdown a:focus {
+//  background-color: #9b7aba;
+//  color: white;
+//}
+//
+///* Closing the detail content on clicking anywhere else */
+//.native-dropdown details[open] summary::before {
+//  position: fixed;
+//  top: 0;
+//  right: 0;
+//  bottom: 0;
+//  left: 0;
+//  content: "";
+//  cursor: default;
+//}
+//

@@ -1,0 +1,70 @@
+#esignature {
+    img {
+        max-width: 100%;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &.vote-type {
+        img {
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #scroll-down {
+            display: none!important;
+        }
+
+        .content-container {
+            overflow: visible!important;
+        }
+    }
+}
+
+#esignature-save {
+    .open .docs-toggle {
+        transform: rotate(180deg);
+    }
+    .checkbox.document {
+        position: relative;
+    }
+    .docs-toggle {
+        transition: 0.3s;
+        position: absolute;
+        right: 1rem;
+        top: 5px;
+    }
+    .docs-toggle:hover {
+        cursor: pointer;
+    }
+
+    .checkbox {
+        label {
+            span.text-truncate {
+                max-width: 450px;
+                overflow: hidden;
+                display: inline-block;
+            }
+        }
+        i {
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .checkbox {
+            label {
+                span.text-truncate {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+
+}
+
+
+

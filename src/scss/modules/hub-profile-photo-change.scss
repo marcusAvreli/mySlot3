@@ -1,0 +1,28 @@
+
+hub-profile-photo-change {
+
+    #upload-demo {
+        .cr-boundary {
+            border-radius: 50%;
+        }
+    
+        .cr-viewport {
+            width: 96px!important;
+            height: 96px!important;
+        }
+
+        .cr-viewport {
+            border: 0;
+        }
+    }
+
+    .upload-msg {
+        padding: 47px!important;
+    }
+
+    .actions.ready {
+        margin-top: 50px;
+    }
+}
+
+

@@ -1,0 +1,449 @@
+{
+  "data": [
+  {
+    "id": 280,
+    "taskTitle": "Úloha codeceptJS 2023-08-04-160608-498",
+    "deadline": 3155740980000,
+    "state": {
+      "id": "TASK_FULFILLED",
+      "name": "splnená",
+      "color": "complete"
+    },
+    "solvers": [
+      {
+        "userId": 851,
+        "title": "Bc.",
+        "firstName": "Lukáš",
+        "lastName": "Ondrejček",
+        "fullName": "Bc. Lukáš Ondrejček",
+        "photo": "/images/gallery/user/lukas.ondrejcek@interway.sk.png",
+        "email": "lukas.ondrejcek@interway.sk"
+      }
+    ],
+    "userVisibility": "CREATOR_EVALUATOR"
+  },
+  {
+    "id": 257,
+    "taskTitle": "ajajaj",
+    "deadline": 1691137560000,
+    "state": {
+      "id": "PENDING",
+      "name": "čaká na hodnotenie",
+      "color": "warning"
+    },
+    "solvers": [
+      {
+        "userId": 851,
+        "title": "Bc.",
+        "firstName": "Lukáš",
+        "lastName": "Ondrejček",
+        "fullName": "Bc. Lukáš Ondrejček",
+        "photo": "/images/gallery/user/lukas.ondrejcek@interway.sk.png",
+        "email": "lukas.ondrejcek@interway.sk"
+      },
+      {
+        "userId": 2552,
+        "title": "Ing.",
+        "firstName": "Tester",
+        "lastName": "Playwright",
+        "fullName": "Ing. Tester Playwright",
+        "photo": "/images/gallery/user/web.spam@interway.sk.png",
+        "email": "web.spam@interway.sk"
+      }
+    ],
+    "userVisibility": ""
+  },
+  {
+    "id": 256,
+    "taskTitle": "skuska",
+    "deadline": 1691134980000,
+    "state": {
+      "id": "PENDING",
+      "name": "čaká na hodnotenie",
+      "color": "warning"
+    },
+    "solvers": [
+      {
+        "userId": 851,
+        "title": "Bc.",
+        "firstName": "Lukáš",
+        "lastName": "Ondrejček",
+        "fullName": "Bc. Lukáš Ondrejček",
+        "photo": "/images/gallery/user/lukas.ondrejcek@interway.sk.png",
+        "email": "lukas.ondrejcek@interway.sk"
+      },
+      {
+        "userId": 2552,
+        "title": "Ing.",
+        "firstName": "Tester",
+        "lastName": "Playwright",
+        "fullName": "Ing. Tester Playwright",
+        "photo": "/images/gallery/user/web.spam@interway.sk.png",
+        "email": "web.spam@interway.sk"
+      }
+    ],
+    "userVisibility": ""
+  },
+  {
+    "id": 255,
+    "taskTitle": "deadline uloha",
+    "deadline": 1691134320000,
+    "state": {
+      "id": "CLOSED",
+      "name": "uzavretá",
+      "color": "default"
+    },
+    "solvers": [
+      {
+        "userId": 2977,
+        "title": "",
+        "firstName": "Marián",
+        "lastName": "Choma",
+        "fullName": "Marián Choma",
+        "photo": null,
+        "email": "marian.choma@interway.sk"
+      }
+    ],
+    "userVisibility": "CREATOR_EVALUATOR"
+  },
+  {
+    "id": 252,
+    "taskTitle": "Úloha codeceptJS 2023-08-03-140114-421",
+    "deadline": 1691056800000,
+    "state": {
+      "id": "CLOSED",
+      "name": "uzavretá",
+      "color": "default"
+    },
+    "solvers": [
+      {
+        "userId": 851,
+        "title": "Bc.",
+        "firstName": "Lukáš",
+        "lastName": "Ondrejček",
+        "fullName": "Bc. Lukáš Ondrejček",
+        "photo": "/images/gallery/user/lukas.ondrejcek@interway.sk.png",
+        "email": "lukas.ondrejcek@interway.sk"
+      }
+    ],
+    "userVisibility": "CREATOR_EVALUATOR"
+  },
+  {
+    "id": 250,
+    "taskTitle": "Úloha codeceptJS 2023-08-03-135543-528",
+    "deadline": 3155740980000,
+    "state": {
+      "id": "TASK_FULFILLED",
+      "name": "splnená",
+      "color": "complete"
+    },
+    "solvers": [
+      {
+        "userId": 851,
+        "title": "Bc.",
+        "firstName": "Lukáš",
+        "lastName": "Ondrejček",
+        "fullName": "Bc. Lukáš Ondrejček",
+        "photo": "/images/gallery/user/lukas.ondrejcek@interway.sk.png",
+        "email": "lukas.ondrejcek@interway.sk"
+      }
+    ],
+    "userVisibility": "CREATOR_EVALUATOR"
+  },
+  {
+    "id": 249,
+    "taskTitle": "Úloha codeceptJS 2023-08-03-135543-528",
+    "deadline": 1691056800000,
+    "state": {
+      "id": "CLOSED",
+      "name": "uzavretá",
+      "color": "default"
+    },
+    "solvers": [
+      {
+        "userId": 851,
+        "title": "Bc.",
+        "firstName": "Lukáš",
+        "lastName": "Ondrejček",
+        "fullName": "Bc. Lukáš Ondrejček",
+        "photo": "/images/gallery/user/lukas.ondrejcek@interway.sk.png",
+        "email": "lukas.ondrejcek@interway.sk"
+      }
+    ],
+    "userVisibility": "CREATOR_EVALUATOR"
+  },
+  {
+    "id": 229,
+    "taskTitle": "uloha",
+    "deadline": 1691143200000,
+    "state": {
+      "id": "CLOSED",
+      "name": "uzavretá",
+      "color": "default"
+    },
+    "solvers": [
+      {
+        "userId": 851,
+        "title": "Bc.",
+        "firstName": "Lukáš",
+        "lastName": "Ondrejček",
+        "fullName": "Bc. Lukáš Ondrejček",
+        "photo": "/images/gallery/user/lukas.ondrejcek@interway.sk.png",
+        "email": "lukas.ondrejcek@interway.sk"
+      }
+    ],
+    "userVisibility": "CREATOR_EVALUATOR"
+  },
+  {
+    "id": 227,
+    "taskTitle": "TestSCS",
+    "deadline": 1691056800000,
+    "state": {
+      "id": "CLOSED",
+      "name": "uzavretá",
+      "color": "default"
+    },
+    "solvers": [
+      {
+        "userId": 851,
+        "title": "Bc.",
+        "firstName": "Lukáš",
+        "lastName": "Ondrejček",
+        "fullName": "Bc. Lukáš Ondrejček",
+        "photo": "/images/gallery/user/lukas.ondrejcek@interway.sk.png",
+        "email": "lukas.ondrejcek@interway.sk"
+      }
+    ],
+    "userVisibility": "EVALUATOR"
+  },
+  {
+    "id": 224,
+    "taskTitle": "nova skuska",
+    "deadline": 1691143200000,
+    "state": {
+      "id": "CLOSED",
+      "name": "uzavretá",
+      "color": "default"
+    },
+    "solvers": [],
+    "userVisibility": "CREATOR"
+  }
+],
+  "lastPage": 1,
+  "totalItems": 10,
+  "columns": [
+  {
+    "field": "_actions_",
+    "formatter": "wj-actions-modal",
+    "width": 40,
+    "maxWidth": 40,
+    "filterable": false,
+    "headerSort": false,
+    "resizable": false,
+    "formatterParams": [
+      {
+        "condition": [
+          {
+            "attribute": "userVisibility",
+            "type": "like",
+            "value": "CREATOR"
+          }
+        ],
+        "size": "x-large",
+        "display": "fill-in",
+        "action": "wj-modal-open-custom-element",
+        "attributes": "",
+        "text": "",
+        "customElement": "add-new-task",
+        "type": "EDIT",
+        "title": "Upraviť informácie o úlohe",
+        "formPart": "taskInformations",
+        "url": ""
+      },
+      {
+        "condition": [
+          {
+            "attribute": "userVisibility",
+            "type": "like",
+            "value": "CREATOR"
+          }
+        ],
+        "size": "x-large",
+        "display": "fill-in",
+        "action": "wj-modal-open-custom-element",
+        "attributes": "",
+        "text": "",
+        "customElement": "add-new-task",
+        "type": "DUPLICATE",
+        "title": "Duplikovať úlohu",
+        "formPart": "duplicate",
+        "url": "",
+        "responsive": "0"
+      },
+      {
+        "dataAttr": "data-task-state",
+        "condition": [
+          {
+            "attribute": "userVisibility",
+            "type": "like",
+            "value": "CREATOR"
+          }
+        ],
+        "icon": "fa-light fa-user-group",
+        "action": "wj-dropdown-click-event",
+        "attributes": "",
+        "attrValue": "ASSIGNED",
+        "text": "",
+        "type": "EDIT",
+        "title": "Odoslať riešiteľom",
+        "url": "",
+        "clickAction": "educationUpdateTaskState"
+      },
+      {
+        "dataAttr": "data-task-state",
+        "condition": [
+          {
+            "attribute": "userVisibility",
+            "type": "like",
+            "value": "EVALUATOR"
+          },
+          {
+            "attribute": "state.id",
+            "type": "neq",
+            "value": "CLOSED"
+          }
+        ],
+        "icon": "fa-light fa-lock",
+        "action": "wj-dropdown-click-event",
+        "attributes": "",
+        "attrValue": "CLOSED",
+        "text": "",
+        "type": "EDIT",
+        "title": "Uzavrieť",
+        "url": "",
+        "clickAction": "educationUpdateTaskState"
+      },
+      {
+        "dataAttr": "data-task-state",
+        "condition": [
+          {
+            "attribute": "userVisibility",
+            "type": "like",
+            "value": "EVALUATOR"
+          },
+          {
+            "attribute": "state.id",
+            "type": "eq",
+            "value": "CLOSED"
+          }
+        ],
+        "icon": "fa-light fa-unlock",
+        "action": "wj-dropdown-click-event",
+        "attributes": "",
+        "attrValue": "PROCESSING",
+        "text": "",
+        "type": "EDIT",
+        "title": "Otvoriť",
+        "url": "",
+        "clickAction": "educationUpdateTaskState"
+      },
+      {
+        "condition": [
+          {
+            "attribute": "userVisibility",
+            "type": "like",
+            "value": "CREATOR"
+          }
+        ],
+        "callback": "educationTaskDelete",
+        "action": "wj-modal-delete",
+        "attributes": "",
+        "text": "Skutočne si prajete odstrániť danú úlohu?",
+        "type": "DELETE",
+        "title": "Odstrániť úlohu",
+        "url": "/private/rest/education/task/delete/{id}"
+      }
+    ]
+  },
+  {
+    "title": "Názov",
+    "field": "taskTitle",
+    "filterField": "name",
+    "sortField": "name",
+    "filterable": true,
+    "formatterParams": {
+      "route": "education.tasks.detail",
+      "attributes": "param-task-id=\"{id}\"",
+      "href": "/net/education/tasks/{id}",
+      "printField": ""
+    },
+    "formatter": "wj-router-link",
+    "resizable": "false",
+    "vertAlign": "middle",
+    "hozAlign": "left",
+    "headerSort": true,
+    "headerHozAlign": "left",
+    "formatterPrint": "printFormatter",
+    "minWidth": "350"
+  },
+  {
+    "title": "Termín odovzdania",
+    "field": "deadline",
+    "filterField": "deadline",
+    "sortField": "deadline",
+    "filterable": false,
+    "formatter": "wj-datetime",
+    "resizable": "false",
+    "vertAlign": "middle",
+    "hozAlign": "left",
+    "headerSort": true,
+    "headerHozAlign": "left",
+    "formatterPrint": "printFormatter",
+    "formatterParams": {
+      "printField": ""
+    },
+    "minWidth": "188"
+  },
+  {
+    "title": "Stav",
+    "field": "state",
+    "filterField": "state",
+    "sortField": "state",
+    "filterable": false,
+    "formatterParams": {
+      "printField": "",
+      "colorPrefix": "label-"
+    },
+    "formatter": "wj-badge",
+    "resizable": "false",
+    "vertAlign": "middle",
+    "hozAlign": "left",
+    "headerSort": true,
+    "headerHozAlign": "left",
+    "formatterPrint": "printFormatter",
+    "minWidth": "188"
+  },
+  {
+    "title": "Riešitelia",
+    "field": "solvers",
+    "filterField": "solvers",
+    "sortField": "solvers.firstName",
+    "filterable": false,
+    "formatterParams": {
+      "photo-size": "sm",
+      "show-count": "5",
+      "printField": ""
+    },
+    "formatter": "wj-profile-photo-stacked",
+    "resizable": "false",
+    "vertAlign": "middle",
+    "hozAlign": "left",
+    "headerSort": false,
+    "headerHozAlign": "left",
+    "formatterPrint": "printFormatter",
+    "minWidth": "188"
+  }
+],
+  "columnOptions": null,
+  "filters": []
+}

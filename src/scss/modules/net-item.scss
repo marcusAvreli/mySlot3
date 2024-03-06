@@ -1,0 +1,58 @@
+// Import important
+@import "../themes/net-basic/important";
+
+/*------------------------------------------------------------------
+[32. Net-Item]
+*/
+
+.net-items {
+  margin: 0 -20px;
+  .net-item {
+    display: flex;
+    padding: 10px 20px;
+    &:hover {
+      background-color: $color-complete-lighter;
+    }
+    &.active {
+      background-color: $color-warning-lighter;
+    }
+    > div{
+      align-self: start !important;
+      margin-top: 5px;
+    }
+    .net-subject, .net-datetime{
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .net-sender {
+      //margin-top: -3px;
+      margin-top: 0px;
+    }
+    .form-check {
+      margin: 0;
+    }
+    .net-icon{
+      &.text-danger{
+        color: $color-danger-light !important;
+      }
+      &.text-primary{
+        color: $color-primary-light !important;
+      }
+      &.text-warning{
+        color: $color-warning-light !important;
+      }
+      &.text-complete{
+        color: $color-complete-light !important;
+      }
+      &.text-info{
+        color: $color-info-light !important;
+      }
+      &.text-success{
+        color: $color-success-light !important;
+      }
+      &.text-menu{
+        color: $color-menu-light !important;
+      }
+    }
+  }
+}

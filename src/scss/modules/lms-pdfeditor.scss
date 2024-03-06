@@ -1,0 +1,117 @@
+
+lms-certificate-detail {
+  .elements {
+    border-right : 1px dotted gray;
+  }
+  
+  #draggable-elements {
+    li {
+      padding: 10px 0;
+      margin-bottom: 15px;
+      border-bottom: 1px solid gray;
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .drag-element {
+      cursor: grab;
+      &:hover {
+        background: rgba(255, 192, 203, 0.21);
+        border-radius: 5px;
+      }
+      &.dragging {
+        cursor: grabbing;
+        opacity: .5;
+      }
+    }
+  }
+  
+  #dropzone {
+    overflow: hidden;
+    height : 100vh;
+    .drag-element {
+      position: absolute;
+      cursor: grab;
+      &:hover {
+        background: rgba(255, 192, 203, 0.21);
+        border-radius: 5px;
+      }
+      &.dragging {
+        cursor: grabbing;
+        opacity: .5;
+      }
+    }
+    .active {
+      background: rgba(255, 192, 203, 0.35);
+      border: 1px dotted rgb(255, 0, 0);
+      border-radius: 5px;
+    }
+  }
+  #dropContent {
+   width: 210mm;
+    height: 297mm;
+    background: url("/templates/net/assets/img/cerifikate/bg-certificate.png") no-repeat center center;
+    background-size: 100%;
+    position: relative;
+    border : dashed 3px transparent;
+  }
+  
+  .drag-over {
+    border: dashed 3px red !important;
+  }
+  
+  ul {
+    margin : 0;
+    padding : 0;
+    list-style: none;
+  }
+  li {
+    min-height: 40px;
+    .fa-solid {
+      display: none;
+    }
+    &:hover > .fa-solid {
+      display: inline-block !important;
+    }
+  }
+  hr {
+    margin : 10px 0;
+  }
+  
+  #certificates-list {
+    li {
+      border-bottom: 1px solid rgba(128, 128, 128, 0.21);
+      &:hover {
+        cursor: pointer;
+        background: rgba(100, 149, 237, 0.16);
+  
+      }
+      &.active {
+        background: rgba(100, 149, 237, 0.33);
+      }
+  
+    }
+  }
+  
+  #activeCertificate {
+    text-align: center;
+  }
+  
+  
+  .certificate-template {
+    .active::after {
+      font-family: "Font Awesome 6 Pro";
+      content: "\f02e";
+      color: red;
+      position: absolute;
+      right: 11%;
+      top: 0;
+      font-size: 31px;
+    }
+  }
+}
+
+
+
+

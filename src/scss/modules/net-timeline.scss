@@ -1,0 +1,75 @@
+// Import important
+@import "../themes/net-basic/important";
+
+/*------------------------------------------------------------------
+[32. Net-Notification]
+*/
+
+
+.net-notification-item {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  .net-notification-icon {
+    z-index: 1;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3f4254;
+    background: $color-border-a;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  .net-notification-line {
+    display: block;
+    content: " ";
+    justify-content: center;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translate(50%);
+    border-left-width: 1px;
+    border-left-style: dashed;
+    border-left-color: #e4e6ef;
+    width: 40px;
+  }
+  .net-notification-content {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 1rem;
+    .net-notification-header{
+      margin-bottom: 1rem;
+    }
+    .net-notification-desc{
+      padding: 1rem;
+      margin-bottom: 1rem;
+      overflow: auto;
+      border: 1px dashed $color-border-a;
+    }
+    .net-notification-buttons{
+      clear: both;
+      margin-bottom: 1rem;
+    }
+  }
+  .net-notification-creator{
+    align-items: center;
+    display: flex;
+
+    .net-notification-time{
+      opacity: 0.76;
+      line-height: 18px;
+      font-size: 85.714%;
+      margin-right: 1rem;
+    }
+  }
+}

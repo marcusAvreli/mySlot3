@@ -1,0 +1,28 @@
+{
+  "name": "slick-router",
+  "version": "2.5.2",
+  "description": "A powerful and flexible client side router",
+  "main": "slick-router.js",
+  "module": "slick-router.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blikblum/slick-router.git"
+  },
+  "author": "Luiz Américo Pereira Câmara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blikblum/slick-router/issues"
+  },
+  "dependencies": {
+    "path-to-regexp": "^5.0.0"
+  },
+  "keywords": [
+    "router",
+    "web-components",
+    "browser",
+    "pushState",
+    "hierarchical",
+    "nested"
+  ]
+}

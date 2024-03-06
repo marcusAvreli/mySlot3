@@ -1,0 +1,14 @@
+@import "../../scss/themes/net-basic/important.scss";
+
+/*
+[ Router Link ]
+*/
+
+:host{
+    display: block;
+}
+
+:host(.active){
+    cursor: pointer;
+    font-weight: bold;
+}

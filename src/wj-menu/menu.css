@@ -1,0 +1,70 @@
+@import "../../scss/themes/net-basic/important.scss";
+
+/*
+[ Menu ]
+*/
+
+:host {
+  --wj-menu-background: #{$color-contrast-lowest};
+  --wj-menu-border-width: 1px;
+  --wj-menu-border-style: solid;
+  --wj-menu-border-color: var(--wj-border-color);
+  --wj-menu-border-radius: 4px;
+  --wj-menu-padding-top: .5rem;
+  --wj-menu-padding-bottom: .5rem;
+  --wj-menu-padding-inline: 0;
+  --wj-menu-margin-top: ;
+  --wj-menu-margin-bottom: 0;
+  --wj-menu-margin-inline: 0;
+  --wj-menu-z-index: 900;
+
+  display: none;
+  background: var(--wj-menu-background);
+  position: relative;
+  border-width: var(--wj-menu-border-width);
+  border-style: var(--wj-menu-border-style);
+  border-color: var(--wj-menu-border-color);
+  z-index: var(--wj-menu-z-index);
+
+  @include border-radius(var(--wj-menu-border-radius));
+
+  padding-top: var(--wj-menu-padding-top);
+  padding-bottom: var(--wj-menu-padding-bottom);
+  padding-inline: var(--wj-menu-padding-inline);
+  margin-top: var(--wj-menu-margin-top);
+  margin-bottom: var(--wj-menu-margin-bottom);
+  margin-inline: var(--wj-menu-margin-inline);
+  overflow: auto;
+  overscroll-behavior: none;
+  .native-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    ::slotted(wj-button) {
+      margin: 0;
+    }
+  }
+}
+
+:host(.wj-menu-collapse) {
+  max-width: 70px !important;
+}
+
+:host([variant=context]) {
+  display: block !important;
+  //--wj-menu-border-width: 0;
+  margin-left: var(--wj-menu-submenu-offset);
+}
+
+:host([variant=megamenu]) .native-menu {
+  flex-direction: row;
+  align-items: end;
+  flex-wrap: nowrap;
+  .check-icon {
+    display: none;
+  }
+}
+
+:host([active]) {
+  display: flex  !important;
+}

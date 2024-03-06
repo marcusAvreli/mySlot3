@@ -1,0 +1,137 @@
+@import "../../scss/themes/net-basic/important.scss";
+
+
+// Label
+// --------------------------------------------------
+
+:host(.wj-color-primary) {
+  --wj-color: #{$color-primary} !important;
+}
+
+:host(.wj-color-complete) {
+  --wj-color: #{$color-complete} !important;
+}
+
+:host(.wj-color-success) {
+  --wj-color-base: #{$color-success} !important;
+  --wj-color-contrast: #{text-contrast($color-success)} !important;
+}
+
+:host(.wj-color-warning) {
+  --wj-color-base: #{$color-warning} !important;
+  --wj-color-contrast: #{text-contrast($color-warning)} !important;
+}
+
+:host(.wj-color-danger) {
+  --wj-color-base: #{$color-danger} !important;
+  --wj-color-contrast: #{text-contrast($color-danger)} !important;
+}
+
+:host(.wj-color-info) {
+  --wj-color-base: #{$color-info} !important;
+  --wj-color-contrast: #{text-contrast($color-info)} !important;
+}
+
+:host(.wj-color-menu) {
+  --wj-color-base: #{$color-menu} !important;
+  --wj-color-contrast: #{text-contrast($color-menu)} !important;
+}
+
+:host {
+  //--wj-label-text-wrap-font-size: 13px;
+  //--wj-label-text-wrap-line-height: 1.4;
+}
+
+:host {
+  --wj-color: initial;
+  display: block;
+  //color:var(--color);
+  //font-family:var(--ion-font-family, inherit);
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing :border-box;
+}
+
+:host(.wj-color) {
+  color: current-color(base);
+}
+
+:host(.wj-text-wrap),
+:host([text-wrap]) {
+  white-space: normal !important;
+  //font-size: var(--wj-label-text-wrap-font-size);
+  //line-height: var(--wj-label-text-wrap-line-height);
+}
+
+//:host-context(.item-interactive-disabled:not(.item-multiple-inputs)) {
+//  cursor: default;
+//  opacity: .3;
+//  pointer-events: none;
+//}
+//
+//:host-context(.item-input) {
+//  flex: initial;
+//
+//  max-width: 200px;
+//  pointer-events: none;
+//}
+//
+//:host-context(.item-textarea) {
+//  align-self: baseline;
+//}
+
+
+// Fixed Inputs
+// --------------------------------------------------
+
+:host(.label-fixed) {
+  flex: 0 0 100px;
+
+  width: 100px;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+// Stacked & Floating Inputs
+// --------------------------------------------------
+
+:host(.label-stacked),
+:host(.label-floating) {
+  @include margin(null, null, 0, null);
+
+  align-self: stretch;
+
+  width: auto;
+  max-width: 100%;
+}
+
+:host(.label-no-animate.label-floating) {
+  transition: none;
+}
+
+// Headings
+// --------------------------------------------------
+
+::slotted(*) h1,
+::slotted(*) h2,
+::slotted(*) h3,
+::slotted(*) h4,
+::slotted(*) h5,
+::slotted(*) h6 {
+  text-overflow: inherit;
+  overflow: inherit;
+}
+
+:host(.wj-color) {
+  color: var(--wj-color);
+}
+
+::slotted(*:first-child) {
+  margin-top: 0 !important;
+}
+
+::slotted(*:last-child) {
+  margin-bottom: 0 !important;
+}

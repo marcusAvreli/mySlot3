@@ -1,0 +1,77 @@
+@import "../../scss/themes/net-basic/important.scss";
+
+/*
+[ Icon ]
+*/
+
+:host(.wj-color-primary) {
+  --wj-color-base: #{$color-primary-lighter} !important;
+  --wj-color-contrast: #{$color-primary-light} !important;
+}
+
+:host(.wj-color-complete) {
+  --wj-color-base: #{$color-complete-lighter} !important;
+  --wj-color-contrast: #{$color-complete-light} !important;
+}
+
+:host(.wj-color-success) {
+  --wj-color-base: #{$color-success-lighter} !important;
+  --wj-color-contrast: #{$color-success-light} !important;
+}
+
+:host(.wj-color-warning) {
+  --wj-color-base: #{$color-warning-lighter} !important;
+  --wj-color-contrast: #{$color-warning-light} !important;
+}
+
+:host(.wj-color-danger) {
+  --wj-color-base: #{$color-danger-lighter} !important;
+  --wj-color-contrast: #{$color-danger-light} !important;
+}
+
+:host(.wj-color-info) {
+  --wj-color-base: #{$color-info-lighter} !important;
+  --wj-color-contrast: #{$color-info-light} !important;
+}
+
+:host(.wj-color-menu) {
+  --wj-color-base: #{$color-contrast-lower} !important;
+  --wj-color-contrast: #{$color-menu-dark} !important;
+}
+
+:host {
+  --wj-icon-size: 1rem;
+  --wj-icon-width: var(--wj-icon-size, 100%);
+  --wj-icon-height: var(--wj-icon-size, 100%);
+  display: inline-block;
+
+  width: var(--wj-icon-width);
+  height: var(--wj-icon-height);
+
+  contain: strict;
+  fill: currentColor;
+  box-sizing: content-box !important;
+}
+
+.icon-inner, svg {
+  display: block;
+
+  width: var(--wj-icon-width);
+  height: var(--wj-icon-height);
+}
+
+:host(.wj-size-small) {
+  --wj-icon-size: 18px;
+}
+
+:host(.wj-size-large) {
+  --wj-icon-size: 32px;
+}
+
+:host(.wj-size) {
+  font-size: var(--wj-icon-size);
+}
+
+:host(.wj-color) {
+  color: var(--wj-color-contrast);
+}

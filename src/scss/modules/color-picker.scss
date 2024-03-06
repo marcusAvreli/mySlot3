@@ -1,0 +1,880 @@
+// Import important
+@import "../themes/net-basic/important";
+
+#color-picker-input-wrapper {
+    position: relative;
+    cursor: default;
+
+    #color {
+        cursor: pointer;
+    }
+
+    .selected-color {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        position: absolute;
+        right: 18px;
+        top: 16px;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    #color-picker-wrapper {
+        position: absolute;
+        left: -10px;
+        z-index: 100;
+        width: 260px;
+
+        #colors {
+            border: 1px solid darken($color-border-a, 10%);;
+            background-color: $color-contrast-lowest;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 5px;
+        }
+
+        .color {
+            width: 24px;
+            height: 24px;
+        }
+
+        .color:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+// danger-shades
+.bg-danger {
+    background-color: $color-danger!important;
+}
+.bg-danger-lighter {
+    background-color: $color-danger-lighter!important;
+}
+.bg-danger-light {
+    background-color: $color-danger-light!important;
+}
+.bg-danger-dark {
+    background-color: $color-danger-dark!important;
+}
+.bg-danger-darker {
+    background-color: $color-danger-darker!important;
+}
+
+.color-danger {
+    color: $color-danger!important;
+}
+.color-danger-lighter {
+    color: $color-danger-lighter!important;
+}
+.color-danger-light {
+    color: $color-danger-light!important;
+}
+.color-danger-dark {
+    color: $color-danger-dark!important;
+}
+.color-danger-darker {
+    color: $color-danger-darker!important;
+}
+
+// crimson-shades
+.bg-crimson {
+    background-color: $color-crimson!important;
+}
+.bg-crimson-lighter {
+    background-color: $color-crimson-lighter!important;
+}
+.bg-crimson-light {
+    background-color: $color-crimson-light!important;
+}
+.bg-crimson-dark {
+    background-color: $color-crimson-dark!important;
+}
+.bg-crimson-darker {
+    background-color: $color-crimson-darker!important;
+}
+
+.color-crimson {
+    color: $color-crimson!important;
+}
+.color-crimson-lighter {
+    color: $color-crimson-lighter!important;
+}
+.color-crimson-light {
+    color: $color-crimson-light!important;
+}
+.color-crimson-dark {
+    color: $color-crimson-dark!important;
+}
+.color-crimson-darker {
+    color: $color-crimson-darker!important;
+}
+
+// tomato-shades
+.bg-tomato {
+    background-color: $color-tomato!important;
+}
+.bg-tomato-lighter {
+    background-color: $color-tomato-lighter!important;
+}
+.bg-tomato-light {
+    background-color: $color-tomato-light!important;
+}
+.bg-tomato-dark {
+    background-color: $color-tomato-dark!important;
+}
+.bg-tomato-darker {
+    background-color: $color-tomato-darker!important;
+}
+
+.color-tomato {
+    color: $color-tomato!important;
+}
+.color-tomato-lighter {
+    color: $color-tomato-lighter!important;
+}
+.color-tomato-light {
+    color: $color-tomato-light!important;
+}
+.color-tomato-dark {
+    color: $color-tomato-dark!important;
+}
+.color-tomato-darker {
+    color: $color-tomato-darker!important;
+}
+
+// red-orange-shades
+.bg-red-orange {
+    background-color: $color-red-orange!important;
+}
+.bg-red-orange-lighter {
+    background-color: $color-red-orange-lighter!important;
+}
+.bg-red-orange-light {
+    background-color: $color-red-orange-light!important;
+}
+.bg-red-orange-dark {
+    background-color: $color-red-orange-dark!important;
+}
+.bg-red-orange-darker {
+    background-color: $color-red-orange-darker!important;
+}
+
+.color-red-orange {
+    color: $color-red-orange!important;
+}
+.color-red-orange-lighter {
+    color: $color-red-orange-lighter!important;
+}
+.color-red-orange-light {
+    color: $color-red-orange-light!important;
+}
+.color-red-orange-dark {
+    color: $color-red-orange-dark!important;
+}
+.color-red-orange-darker {
+    color: $color-red-orange-darker!important;
+}
+
+// orange-shades
+.bg-orange {
+    background-color: $color-orange!important;
+}
+.bg-orange-lighter {
+    background-color: $color-orange-lighter!important;
+}
+.bg-orange-light {
+    background-color: $color-orange-light!important;
+}
+.bg-orange-dark {
+    background-color: $color-orange-dark!important;
+}
+.bg-orange-darker {
+    background-color: $color-orange-darker!important;
+}
+
+.color-orange {
+    color: $color-orange!important;
+}
+.color-orange-lighter {
+    color: $color-orange-lighter!important;
+}
+.color-orange-light {
+    color: $color-orange-light!important;
+}
+.color-orange-dark {
+    color: $color-orange-dark!important;
+}
+.color-orange-darker {
+    color: $color-orange-darker!important;
+}
+
+// yellow-orange-shades
+.bg-yellow-orange {
+    background-color: $color-yellow-orange!important;
+}
+.bg-yellow-orange-lighter {
+    background-color: $color-yellow-orange-lighter!important;
+}
+.bg-yellow-orange-light {
+    background-color: $color-yellow-orange-light!important;
+}
+.bg-yellow-orange-dark {
+    background-color: $color-yellow-orange-dark!important;
+}
+.bg-yellow-orange-darker {
+    background-color: $color-yellow-orange-darker!important;
+}
+
+.color-yellow-orange {
+    color: $color-yellow-orange!important;
+}
+.color-yellow-orange-lighter {
+    color: $color-yellow-orange-lighter!important;
+}
+.color-yellow-orange-light {
+    color: $color-yellow-orange-light!important;
+}
+.color-yellow-orange-dark {
+    color: $color-yellow-orange-dark!important;
+}
+.color-yellow-orange-darker {
+    color: $color-yellow-orange-darker!important;
+}
+
+// warning-shades
+.bg-warning {
+    background-color: $color-warning!important;
+}
+.bg-warning-lighter {
+    background-color: $color-warning-lighter!important;
+}
+.bg-warning-light {
+    background-color: $color-warning-light!important;
+}
+.bg-warning-dark {
+    background-color: $color-warning-dark!important;
+}
+.bg-warning-darker {
+    background-color: $color-warning-darker!important;
+}
+
+.color-warning {
+    color: $color-warning!important;
+}
+.color-warning-lighter {
+    color: $color-warning-lighter!important;
+}
+.color-warning-light {
+    color: $color-warning-light!important;
+}
+.color-warning-dark {
+    color: $color-warning-dark!important;
+}
+.color-warning-darker {
+    color: $color-warning-darker!important;
+}
+
+// khaki-shades
+.bg-khaki {
+    background-color: $color-khaki!important;
+}
+.bg-khaki-lighter {
+    background-color: $color-khaki-lighter!important;
+}
+.bg-khaki-light {
+    background-color: $color-khaki-light!important;
+}
+.bg-khaki-dark {
+    background-color: $color-khaki-dark!important;
+}
+.bg-khaki-darker {
+    background-color: $color-khaki-darker!important;
+}
+
+.color-khaki {
+    color: $color-khaki!important;
+}
+.color-khaki-lighter {
+    color: $color-khaki-lighter!important;
+}
+.color-khaki-light {
+    color: $color-khaki-light!important;
+}
+.color-khaki-dark {
+    color: $color-khaki-dark!important;
+}
+.color-khaki-darker {
+    color: $color-khaki-darker!important;
+}
+
+// olive-shades
+.bg-olive {
+    background-color: $color-olive!important;
+}
+.bg-olive-lighter {
+    background-color: $color-olive-lighter!important;
+}
+.bg-olive-light {
+    background-color: $color-olive-light!important;
+}
+.bg-olive-dark {
+    background-color: $color-olive-dark!important;
+}
+.bg-olive-darker {
+    background-color: $color-olive-darker!important;
+}
+
+.color-olive {
+    color: $color-olive!important;
+}
+.color-olive-lighter {
+    color: $color-olive-lighter!important;
+}
+.color-olive-light {
+    color: $color-olive-light!important;
+}
+.color-olive-dark {
+    color: $color-olive-dark!important;
+}
+.color-olive-darker {
+    color: $color-olive-darker!important;
+}
+
+// yellow-green-shades
+.bg-yellow-green {
+    background-color: $color-yellow-green!important;
+}
+.bg-yellow-green-lighter {
+    background-color: $color-yellow-green-lighter!important;
+}
+.bg-yellow-green-light {
+    background-color: $color-yellow-green-light!important;
+}
+.bg-yellow-green-dark {
+    background-color: $color-yellow-green-dark!important;
+}
+.bg-yellow-green-darker {
+    background-color: $color-yellow-green-darker!important;
+}
+
+.color-yellow-green {
+    color: $color-yellow-green!important;
+}
+.color-yellow-green-lighter {
+    color: $color-yellow-green-lighter!important;
+}
+.color-yellow-green-light {
+    color: $color-yellow-green-light!important;
+}
+.color-yellow-green-dark {
+    color: $color-yellow-green-dark!important;
+}
+.color-yellow-green-darker {
+    color: $color-yellow-green-darker!important;
+}
+
+// success-shades
+.bg-success {
+    background-color: $color-success!important;
+}
+.bg-success-lighter {
+    background-color: $color-success-lighter!important;
+}
+.bg-success-light {
+    background-color: $color-success-light!important;
+}
+.bg-success-dark {
+    background-color: $color-success-dark!important;
+}
+.bg-success-darker {
+    background-color: $color-success-darker!important;
+}
+
+.color-success {
+    color: $color-success!important;
+}
+.color-success-lighter {
+    color: $color-success-lighter!important;
+}
+.color-success-light {
+    color: $color-success-light!important;
+}
+.color-success-dark {
+    color: $color-success-dark!important;
+}
+.color-success-darker {
+    color: $color-success-darker!important;
+}
+
+// springgreen-shades
+.bg-springgreen {
+    background-color: $color-springgreen!important;
+}
+.bg-springgreen-lighter {
+    background-color: $color-springgreen-lighter!important;
+}
+.bg-springgreen-light {
+    background-color: $color-springgreen-light!important;
+}
+.bg-springgreen-dark {
+    background-color: $color-springgreen-dark!important;
+}
+.bg-springgreen-darker {
+    background-color: $color-springgreen-darker!important;
+}
+
+.color-springgreen {
+    color: $color-springgreen!important;
+}
+.color-springgreen-lighter {
+    color: $color-springgreen-lighter!important;
+}
+.color-springgreen-light {
+    color: $color-springgreen-light!important;
+}
+.color-springgreen-dark {
+    color: $color-springgreen-dark!important;
+}
+.color-springgreen-darker {
+    color: $color-springgreen-darker!important;
+}
+
+
+// turquoise-shades
+.bg-turquoise {
+    background-color: $color-turquoise!important;
+}
+.bg-turquoise-lighter {
+    background-color: $color-turquoise-lighter!important;
+}
+.bg-turquoise-light {
+    background-color: $color-turquoise-light!important;
+}
+.bg-turquoise-dark {
+    background-color: $color-turquoise-dark!important;
+}
+.bg-turquoise-darker {
+    background-color: $color-turquoise-darker!important;
+}
+
+
+.color-turquoise {
+    color: $color-turquoise!important;
+}
+.color-turquoise-lighter {
+    color: $color-turquoise-lighter!important;
+}
+.color-turquoise-light {
+    color: $color-turquoise-light!important;
+}
+.color-turquoise-dark {
+    color: $color-turquoise-dark!important;
+}
+.color-turquoise-darker {
+    color: $color-turquoise-darker!important;
+}
+
+// aqua-shades
+.bg-aqua {
+    background-color: $color-aqua!important;
+}
+.bg-aqua-lighter {
+    background-color: $color-aqua-lighter!important;
+}
+.bg-aqua-light {
+    background-color: $color-aqua-light!important;
+}
+.bg-aqua-dark {
+    background-color: $color-aqua-dark!important;
+}
+.bg-aqua-darker {
+    background-color: $color-aqua-darker!important;
+}
+
+.color-aqua {
+    color: $color-aqua!important;
+}
+.color-aqua-lighter {
+    color: $color-aqua-lighter!important;
+}
+.color-aqua-light {
+    color: $color-aqua-light!important;
+}
+.color-aqua-dark {
+    color: $color-aqua-dark!important;
+}
+.color-aqua-darker {
+    color: $color-aqua-darker!important;
+}
+
+// complete-shades
+.bg-complete {
+    background-color: $color-complete!important;
+}
+.bg-complete-lighter {
+    background-color: $color-complete-lighter!important;
+}
+.bg-complete-light {
+    background-color: $color-complete-light!important;
+}
+.bg-complete-dark {
+    background-color: $color-complete-dark!important;
+}
+.bg-complete-darker {
+    background-color: $color-complete-darker!important;
+}
+
+.color-complete {
+    color: $color-complete!important;
+}
+.color-complete-lighter {
+    color: $color-complete-lighter!important;
+}
+.color-complete-light {
+    color: $color-complete-light!important;
+}
+.color-complete-dark {
+    color: $color-complete-dark!important;
+}
+.color-complete-darker {
+    color: $color-complete-darker!important;
+}
+
+// navy-shades
+.bg-navy {
+    background-color: $color-navy!important;
+}
+.bg-navy-lighter {
+    background-color: $color-navy-lighter!important;
+}
+.bg-navy-light {
+    background-color: $color-navy-light!important;
+}
+.bg-navy-dark {
+    background-color: $color-navy-dark!important;
+}
+.bg-navy-darker {
+    background-color: $color-navy-darker!important;
+}
+
+.color-navy {
+    color: $color-navy!important;
+}
+.color-navy-lighter {
+    color: $color-navy-lighter!important;
+}
+.color-navy-light {
+    color: $color-navy-light!important;
+}
+.color-navy-dark {
+    color: $color-navy-dark!important;
+}
+.color-navy-darker {
+    color: $color-navy-darker!important;
+}
+
+// primary shades
+.bg-primary {
+    background-color: $color-primary!important;
+}
+.bg-primary-lighter {
+    background-color: $color-primary-lighter!important;
+}
+.bg-primary-light {
+    background-color: $color-primary-light!important;
+}
+.bg-primary-dark {
+    background-color: $color-primary-dark!important;
+}
+.bg-primary-darker {
+    background-color: $color-primary-darker!important;
+}
+
+.color-primary {
+    color: $color-primary!important;
+}
+.color-primary-lighter {
+    color: $color-primary-lighter!important;
+}
+.color-primary-light {
+    color: $color-primary-light!important;
+}
+.color-primary-dark {
+    color: $color-primary-dark!important;
+}
+.color-primary-darker {
+    color: $color-primary-darker!important;
+}
+
+// red-violet-shades
+.bg-red-violet {
+    background-color: $color-red-violet!important;
+}
+.bg-red-violet-lighter {
+    background-color: $color-red-violet-lighter!important;
+}
+.bg-red-violet-light {
+    background-color: $color-red-violet-light!important;
+}
+.bg-red-violet-dark {
+    background-color: $color-red-violet-dark!important;
+}
+.bg-red-violet-darker {
+    background-color: $color-red-violet-darker!important;
+}
+
+.color-red-violet {
+    color: $color-red-violet!important;
+}
+.color-red-violet-lighter {
+    color: $color-red-violet-lighter!important;
+}
+.color-red-violet-light {
+    color: $color-red-violet-light!important;
+}
+.color-red-violet-dark {
+    color: $color-red-violet-dark!important;
+}
+.color-red-violet-darker {
+    color: $color-red-violet-darker!important;
+}
+
+// violet-shades
+.bg-violet {
+    background-color: $color-violet!important;
+}
+.bg-violet-lighter {
+    background-color: $color-violet-lighter!important;
+}
+.bg-violet-light {
+    background-color: $color-violet-light!important;
+}
+.bg-violet-dark {
+    background-color: $color-violet-dark!important;
+}
+.bg-violet-darker {
+    background-color: $color-violet-darker!important;
+}
+
+.color-violet {
+    color: $color-violet!important;
+}
+.color-violet-lighter {
+    color: $color-violet-lighter!important;
+}
+.color-violet-light {
+    color: $color-violet-light!important;
+}
+.color-violet-dark {
+    color: $color-violet-dark!important;
+}
+.color-violet-darker {
+    color: $color-violet-darker!important;
+}
+
+// magenta-shades
+.bg-magenta {
+    background-color: $color-magenta!important;
+}
+.bg-magenta-lighter {
+    background-color: $color-magenta-lighter!important;
+}
+.bg-magenta-light {
+    background-color: $color-magenta-light!important;
+}
+.bg-magenta-dark {
+    background-color: $color-magenta-dark!important;
+}
+.bg-magenta-darker {
+    background-color: $color-magenta-darker!important;
+}
+
+.color-magenta {
+    color: $color-magenta!important;
+}
+.color-magenta-lighter {
+    color: $color-magenta-lighter!important;
+}
+.color-magenta-light {
+    color: $color-magenta-light!important;
+}
+.color-magenta-dark {
+    color: $color-magenta-dark!important;
+}
+.color-magenta-darker {
+    color: $color-magenta-darker!important;
+}
+
+// deeppink-shades
+.bg-deeppink {
+    background-color: $color-deeppink!important;
+}
+.bg-deeppink-lighter {
+    background-color: $color-deeppink-lighter!important;
+}
+.bg-deeppink-light {
+    background-color: $color-deeppink-light!important;
+}
+.bg-deeppink-dark {
+    background-color: $color-deeppink-dark!important;
+}
+.bg-deeppink-darker {
+    background-color: $color-deeppink-darker!important;
+}
+
+.color-deeppink {
+    color: $color-deeppink!important;
+}
+.color-deeppink-lighter {
+    color: $color-deeppink-lighter!important;
+}
+.color-deeppink-light {
+    color: $color-deeppink-light!important;
+}
+.color-deeppink-dark {
+    color: $color-deeppink-dark!important;
+}
+.color-deeppink-darker {
+    color: $color-deeppink-darker!important;
+}
+
+// hotpink-shades
+.bg-hotpink {
+    background-color: $color-hotpink!important;
+}
+.bg-hotpink-lighter {
+    background-color: $color-hotpink-lighter!important;
+}
+.bg-hotpink-light {
+    background-color: $color-hotpink-light!important;
+}
+.bg-hotpink-dark {
+    background-color: $color-hotpink-dark!important;
+}
+.bg-hotpink-darker {
+    background-color: $color-hotpink-darker!important;
+}
+
+.color-hotpink {
+    color: $color-hotpink!important;
+}
+.color-hotpink-lighter {
+    color: $color-hotpink-lighter!important;
+}
+.color-hotpink-light {
+    color: $color-hotpink-light!important;
+}
+.color-hotpink-dark {
+    color: $color-hotpink-dark!important;
+}
+.color-hotpink-darker {
+    color: $color-hotpink-darker!important;
+}
+
+// lightcoral-shades
+.bg-lightcoral {
+    background-color: $color-lightcoral!important;
+}
+.bg-lightcoral-lighter {
+    background-color: $color-lightcoral-lighter!important;
+}
+.bg-lightcoral-light {
+    background-color: $color-lightcoral-light!important;
+}
+.bg-lightcoral-dark {
+    background-color: $color-lightcoral-dark!important;
+}
+.bg-lightcoral-darker {
+    background-color: $color-lightcoral-darker!important;
+}
+
+.color-lightcoral {
+    color: $color-lightcoral!important;
+}
+.color-lightcoral-lighter {
+    color: $color-lightcoral-lighter!important;
+}
+.color-lightcoral-light {
+    color: $color-lightcoral-light!important;
+}
+.color-lightcoral-dark {
+    color: $color-lightcoral-dark!important;
+}
+.color-lightcoral-darker {
+    color: $color-lightcoral-darker!important;
+}
+
+// saddle-brown-shades
+.bg-saddle-brown {
+    background-color: $color-saddle-brown!important;
+}
+.bg-saddle-brown-lighter {
+    background-color: $color-saddle-brown-lighter!important;
+}
+.bg-saddle-brown-light {
+    background-color: $color-saddle-brown-light!important;
+}
+.bg-saddle-brown-dark {
+    background-color: $color-saddle-brown-dark!important;
+}
+.bg-saddle-brown-darker {
+    background-color: $color-saddle-brown-darker!important;
+}
+
+.color-saddle-brown {
+    color: $color-saddle-brown!important;
+}
+.color-saddle-brown-lighter {
+    color: $color-saddle-brown-lighter!important;
+}
+.color-saddle-brown-light {
+    color: $color-saddle-brown-light!important;
+}
+.color-saddle-brown-dark {
+    color: $color-saddle-brown-dark!important;
+}
+.color-saddle-brown-darker {
+    color: $color-saddle-brown-darker!important;
+}
+
+// info-shades
+.bg-info {
+    background-color: $color-info!important;
+}
+.bg-info-lighter {
+    background-color: $color-info-lighter!important;
+}
+.bg-info-light {
+    background-color: $color-info-light!important;
+}
+.bg-info-dark {
+    background-color: $color-info-dark!important;
+}
+.bg-info-darker {
+    background-color: $color-info-darker!important;
+}
+
+.color-info {
+    color: $color-info!important;
+}
+.color-info-lighter {
+    color: $color-info-lighter!important;
+}
+.color-info-light {
+    color: $color-info-light!important;
+}
+.color-info-dark {
+    color: $color-info-dark!important;
+}
+.color-info-darker {
+    color: $color-info-darker!important;
+}

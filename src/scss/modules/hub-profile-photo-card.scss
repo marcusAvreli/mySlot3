@@ -1,0 +1,19 @@
+.popover.hub-profile-photo-card {
+    min-width: 300px;
+    min-height: 290px;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px,rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
+    border: none;
+    z-index: 1100;
+    .arrow::before {
+        border-bottom-color: rgba(0,0,0, 0.1);
+    }
+    .popover-body {
+        padding: 0;
+    }
+
+    &.bs-popover-right .arrow::before,
+    &.bs-popover-left .arrow::before {
+        border-bottom-color: transparent;
+    }
+
+}

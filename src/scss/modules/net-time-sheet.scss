@@ -1,0 +1,202 @@
+// Import important
+@import "../themes/net-basic/important";
+
+/*------------------------------------------------------------------
+[33. Net timesheet]
+*/
+
+.net-time-sheet{
+  tbody + tbody{
+    border-top: 0px none;
+  }
+  tbody{
+    display: block;
+    tr{
+      display: flex;
+      background: #fff;
+      border-top: 1px solid fade($color-contrast-low, 70%);
+      border-bottom: 1px solid fade($color-contrast-low, 70%);
+      &.strikeout{
+        input{
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+  thead{
+    tr{
+      border-top: 0px solid fade($color-contrast-low, 70%);
+      display: flex;
+      th{
+        background: #fff;
+        border-bottom: 0px!important;
+        &:first-child{
+          padding: 0;
+          padding-left: .5rem !important;
+        }
+      }
+    }
+  }
+  td{
+    padding: 0 !important;
+    display: flex;
+    align-items: center !important;
+    padding: .5rem .5rem !important;
+    height: 56.26px;
+    border-bottom: 0px!important;
+    white-space: nowrap !important;
+  }
+  .net-task-day, .net-task-sum{
+    overflow: hidden;
+    width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center !important;
+    padding: 0 .5rem !important;
+    position: relative;
+    input{
+      width: 120px;
+      height: 100%;
+      border: 0 none;
+      text-align: center;
+      &:hover{
+        background-color: $color-primary-lighter !important;
+      }
+      &:focus{
+        background-color: $color-success-lighter !important;
+      }
+    }
+    &.net-task-day-week{
+      background-image: repeating-linear-gradient(-45deg,transparent,transparent 5px, #dadada 5px,#dadada 5.7px);
+    }
+  }
+  .net-task-sum {
+    width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+  }
+  .net-row-user td{
+    background: #f4f4f4;
+    padding: .5rem !important;
+  }
+  .net-row-user .net-task-name {
+    background: #f4f4f4;
+    padding: .5rem !important;
+    width: calc(100%);
+  }
+  .net-task-name-header, th.net-task-day{
+    height: 30px;
+    padding: 0 .5rem !important;
+  }
+  #net-task-name-header-static{
+    opacity: 1;
+    width: calc(100%);
+    position: relative;
+    height: 30px;
+    padding: 0 .5rem !important;
+  }
+  $width: 5px;
+  $circle-spacing: 5px;
+  .net-task-start{
+    &:before {
+      display: block;
+      position: absolute;
+      top: calc(50% - (#{$width} / 2));
+      left: 0px;
+      content: '';
+      border-top: $width solid transparent;
+      border-left: $width solid $color-success;
+      border-bottom: $width solid transparent;
+    }
+  }
+  .net-task-end{
+    &:after {
+      display: block;
+      position: absolute;
+      top: calc(50% - (#{$width} / 2));
+      right: 0px;
+      content: '';
+      border-top: $width solid transparent;
+      border-right: $width solid $color-danger;
+      border-bottom: $width solid transparent;
+    }
+  }
+}
+
+#userAssignedTasks {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 0;
+}
+
+.headcol0 {
+  width: 23px !important;
+}
+
+.headcol1 {
+  margin-right: auto !important;
+}
+
+#userAssignedTasks.net-view-month {
+  margin-left: 460px;
+  width: calc(100% - 460px);
+  .headcol0, .headcol1, #net-task-name-header-static {
+    position: absolute;
+
+    left: 20px;
+    top: auto;
+    border-bottom: 1px solid fade($color-contrast-low, 70%) !important;
+    /* musime zvysit height o 1px */
+    height: 57.26px;
+  }
+  .headcol0{
+    left: 20px;
+  }
+  .headcol1{
+    width: calc(460px - 23px);
+    left: 43px;
+  }
+  #net-task-name-header-static{
+    /* musime zvysit height o 1px */
+    height: 31px;
+  }
+}
+
+#userAssignedTasks tbody tr.ui-sortable-helper{
+  margin-left: 0px !important;
+}
+.net-task-day-holiday {
+  background-image: repeating-linear-gradient(-45deg,transparent,transparent 5px, $color-danger 5px,$color-danger 5.7px)!important;
+}
+
+.net-task-day-holiday-user {
+  background-image: repeating-linear-gradient(-45deg,transparent,transparent 5px, $color-success 5px,$color-success 5.7px)!important;
+}
+
+.net-time-sheet-wrapper{
+  .notification-panel{
+    .notification-header {
+      padding: 10px;
+      display: block;
+      border-bottom: 1px solid $color-contrast-low;
+      p{
+        margin-bottom:0;
+      }
+      a {
+        color: $color-contrast-high;
+        opacity: 0.54;
+        &:hover {
+          opacity: 0.74;
+        }
+      }
+    }
+    .notification-body {
+      .notification-item .heading{
+        line-height: normal;
+      }
+    }
+  }
+}

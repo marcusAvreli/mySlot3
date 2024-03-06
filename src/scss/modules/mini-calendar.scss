@@ -1,0 +1,148 @@
+// Import important
+@import "../themes/net-basic/important";
+
+/*------------------------------------------------------------------
+[28. HUB-calendar]
+*/
+
+
+
+.mini-calendar {
+  display: block;
+  .calendar-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .calendar-title {
+    margin-bottom: 20px;
+  }
+  .calendar-days {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    i {
+      padding: 10px;
+      &:hover {
+        cursor: pointer;
+        background: $color-info-lighter;
+        padding: 10px;
+        border-radius: 50%;
+      }
+    }
+    .days-list {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      li {
+        min-width: 45px;
+        margin: 0 5px;
+        a {
+          color : $color-success;
+          text-decoration: none;
+          font-weight: 500;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 10px;
+          border-radius: 7px;
+          min-height: 65px;
+          line-height: normal;
+          &:hover {
+            cursor: pointer;
+            background: $color-success;
+            .day-name {
+              color : #fff;
+            }
+            .day-tag {
+              color : #fff;
+            }
+          }
+        }
+      }
+
+      .active {
+        background: $color-success;
+        .day-name {
+          color : #fff;
+        }
+        .day-tag {
+          color : #fff;
+        }
+      }
+
+      .day-name {
+        font-size: 12px;
+        color : $color-contrast-medium;
+      }
+
+      .day-tag {
+        font-weight: 600;
+        //color : $color-success
+      }
+
+      .has-events::after {
+        content: "";
+        display: inline-block;
+        margin-top:5px;
+        width: 5px;
+        height: 5px;
+        border-radius: 7.5px;
+        background-color: lighten(black,10%);
+      }
+    }
+  }
+
+  .calendar-events {
+    .event-all {
+      i {
+        color : $color-success;
+        margin-left: 5px;
+      }
+    }
+  }
+  .event-item {
+    padding: 10px 20px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 4px;
+      height: 80%;
+      background:  $color-info-lighter;
+      position: absolute;
+      left: 5px;
+      border-radius: 5px;
+    }
+    a {
+      padding: 0 10px;
+    }
+    .event-name {
+      font-weight: 700;
+    }
+    .event-duration {
+      font-size: 13px;
+      color :  $color-info-light;
+    }
+  }
+
+}
+
+
+//MODAL calendar events
+
+.modal-calendar-events {
+  hr {
+    margin: 10px 0;
+  }
+  .event-item {
+    &::before {
+      content: none;
+    }
+    box-shadow: -15px 24px 1px -24px $color-info;
+  }
+}
+

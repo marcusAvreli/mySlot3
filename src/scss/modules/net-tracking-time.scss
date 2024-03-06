@@ -1,0 +1,109 @@
+// Import important
+@import "../themes/net-basic/important";
+
+/*------------------------------------------------------------------
+[34. Net tracking time]
+*/
+
+.net-tracking-time{
+  p{
+    display: none;
+  }
+  .net-tracking-time-item{
+    position: relative;
+    margin-bottom: .5rem;
+  }
+}
+
+.net-tracking-times{
+  .net-tracking-time-item{
+    position: relative;
+    margin-bottom: 1rem;
+  }
+}
+
+.net-tracking-time-header {
+  .net-stopwatch {
+    .letter {
+      display: none;
+    }
+  }
+}
+
+/* NET Stopwatch
+------------------------------------
+*/
+.net-stopwatch {
+  .letter {
+    font-size: 12px !important;
+    letter-spacing: 0.00849077em;
+    line-height: 18px;
+    opacity: 0.76 !important;
+  }
+  &.net-stopwatch-bg {
+    background: #7f7fd5;
+    background: -webkit-linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    color: $color-white;
+    text-align: center;
+    padding-bottom: .5rem !important;
+    padding-top: .5rem !important;
+    width: 100%;
+    @include border-radius(7px);
+    font-size: 16px !important;
+    letter-spacing: -0.00295978em;
+    line-height: 24px;
+  }
+}
+
+.net-stopwatch-btn{
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  color: white !important;
+  &.net-stopwatch-add {
+    top: 9px;
+    left: auto;
+    right: 10px;
+  }
+}
+
+.net-stopwatch-blink {
+  animation: blink-animation 1s ease infinite;
+}
+
+net-tracking-attendance .dropdown {
+  cursor: pointer;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+}
+
+.net-attendance{
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  border: 1px solid #dee2e6;
+  position: relative;
+  i{
+    position: absolute;
+    left: 9px;
+    top: 8px;
+  }
+  fa-play{
+    left: 10px;
+  }
+}
+
+#trackingTimeAttendance{
+  .letter{
+    display: none;
+  }
+}
+
+
+
